@@ -1,17 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 
-function Navbar() {
+function Navbar(props) {
+  const {
+    categories = [],
+    setCurrentCategory,
+    contactSelected,
+    currentCategory,
+    setPortfolioSelected,
+  } = props;
+
   return (
     <div>
       <ul>
         <li>
-          <a href="#AboutMe">About Me</a>
+          <span onClick={() => setPortfolioSelected(false)}>About Me</span>
         </li>
         <li>
-          <a href="#Portfolio">Portfolio</a>
+          <span onClick={() => setPortfolioSelected(true)}>Portfolio</span>
         </li>
         <li>
-          <a href="#Projects">Projects Blog</a>
+          <span>Blog</span>
         </li>
       </ul>
     </div>

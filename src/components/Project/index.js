@@ -1,6 +1,6 @@
 import React from "react";
 
-function Resume() {
+function Project() {
   return <section></section>;
 }
-export default Resume;
+export default Project;

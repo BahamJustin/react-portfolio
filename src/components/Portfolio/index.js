@@ -1,17 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Portfolio(props) {
-  const currentRepo = {
-    name: "Repo 1",
-    description: "SOme bullshit",
-  };
+  const [projects] = useState([
+    {
+      name: "project 1",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+    },
+    {
+      name: "project 2",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+    },
+    {
+      name: "project 3",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+    },
+  ]);
+
   return (
     <section>
-      <h1>{currentRepo.name}</h1>
-      <p>{currentRepo.description}</p>
-      <div>
-        <img src="" alt="Site Picture" />
-      </div>
+      <h1>Title</h1>
+      <p>Project Description</p>
+      <div></div>
     </section>
   );
 }
